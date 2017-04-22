@@ -3,5 +3,6 @@
 .idea/modules.xml
 .idea/vcs.xml
 .idea/workspace.xml
+.idea/jsLibraryMappings.xml
 node_modules/
 
