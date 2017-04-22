@@ -48,7 +48,9 @@ var routes = function (Book) {
                 delete req.body._id;
             }
             for (var p in req.body) {
-                req.book[p] = req.body[p];
+                if (Object.prototype.hasOwnProperty.call(req.body, p)) {
+                    req.book[p] = req.body[p];
+                }
             }
             req.book.save(function (err) {
                 if (err) {

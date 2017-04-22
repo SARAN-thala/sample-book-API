@@ -4,7 +4,7 @@ var express = require('express'),
 
 var db;
 
-if (process.env.ENV == 'Test') {
+if (process.env.ENV === 'Test') {
     db = mongoose.connect('mongodb://localhost/REST-API_test');
 } else {
     db = mongoose.connect('mongodb://localhost/REST-API');
