@@ -6,12 +6,6 @@ var should = require('should'),
     agent = request.agent(app);
 
 describe('Book Crud Test', function () {
-
-    after(function (done) {
-        Book.remove();
-        done();
-    })
-
     it('should allow a book to be posted and return a read and _id', function (done) {
         var bookPost = {title: 'new book', author: 'saran', genre: 'Horror'};
 
@@ -25,4 +19,8 @@ describe('Book Crud Test', function () {
             })
     });
 
+    afterEach(function (done) {
+        Book.remove().exec();
+        done();
+    })
 });
