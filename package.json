@@ -4,7 +4,7 @@
   "description": "for learning RESTful services",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nodemon --exec \"mocha --recursive\""
   },
   "author": "saran",
   "license": "ISC",
