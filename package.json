@@ -4,7 +4,9 @@
   "description": "for learning RESTful services",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "saran",
   "license": "ISC",
@@ -18,10 +20,12 @@
     "mongodb": "^2.2.26",
     "mongoose": "^4.9.5",
     "should": "^11.2.1",
-    "sinon": "^2.1.0"
+    "sinon": "^2.1.0",
+    "snyk": "^1.38.0"
   },
   "devDependencies": {
     "gulp-env": "^0.4.0",
     "supertest": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
