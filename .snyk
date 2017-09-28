@@ -20,3 +20,10 @@ patch:
         patched: '2017-08-03T09:55:25.761Z'
     - gulp-nodemon > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
         patched: '2017-08-03T09:55:25.761Z'
+  'npm:debug:20170905':
+    - mocha > debug:
+        patched: '2017-09-28T03:40:08.332Z'
+    - mongoose > mquery > debug:
+        patched: '2017-09-28T03:40:08.332Z'
+    - gulp-mocha > mocha > debug:
+        patched: '2017-09-28T03:40:08.332Z'
