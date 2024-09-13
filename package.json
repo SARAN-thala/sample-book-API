@@ -20,7 +20,7 @@
     "mongodb": "^2.2.26",
     "mongoose": "^4.9.5",
     "should": "^11.2.1",
-    "sinon": "^2.1.0",
+    "sinon": "^16.1.2",
     "snyk": "^1.41.1"
   },
   "devDependencies": {
